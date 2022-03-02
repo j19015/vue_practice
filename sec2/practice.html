@@ -6,8 +6,10 @@
     </head>
     <body>
         <div id="app">
-            <!--要素の表示非表示を簡単に切り替えることができる-->
-           <p v-if="toggle">Hello</p>
+            <ol>
+                <!-- 番号付きのリストでcolorsの配列のカラムの数の分だけ出力される-->
+                <li v-for="color in colors">{{ color }}</li>
+            </ol>
         </div>
         <script src="https://unpkg.com/vue@3.1.5"></script>
         <script src="script.js"></script>

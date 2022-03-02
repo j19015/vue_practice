@@ -7,7 +7,6 @@
 
 const app=Vue.createApp({
     data: () =>({
-        //要素の表示、非表示を切り替える
-        toggle: true
+        colors: ['Red','Green','Blue']
     })
 }).mount('#app');
