@@ -1,1 +1,3 @@
-console.log(Vue.version);
+const app=Vue.createApp({
+    //options
+})
