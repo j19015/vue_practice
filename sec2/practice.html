@@ -6,11 +6,8 @@
     </head>
     <body>
         <div id="app">
-            <!--マスタッシュ構文と呼ばれる、日本語だと口ひげ-->
-            <p>{{ message }}</p>
-            <p>{{ count }}</p>
-            <p>{{ user.prefecture }}</p>
-            <p>{{ colors[1] }}</p>
+            <!-- 属性へのデータバインディングではv-bindディレクティブを使用 -->
+            <input type="text" v-bind:value="message" />
         </div>
         <script src="https://unpkg.com/vue@3.1.5"></script>
         <script src="script.js"></script>
