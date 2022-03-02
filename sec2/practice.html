@@ -6,8 +6,8 @@
     </head>
     <body>
         <div id="app">
-            <!-- 属性へのデータバインディングではv-bindディレクティブを使用 -->
-            <input type="text" v-bind:value="message" />
+            <!--要素の表示非表示を簡単に切り替えることができる-->
+           <p v-if="toggle">Hello</p>
         </div>
         <script src="https://unpkg.com/vue@3.1.5"></script>
         <script src="script.js"></script>
