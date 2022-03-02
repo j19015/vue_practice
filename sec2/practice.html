@@ -6,10 +6,14 @@
     </head>
     <body>
         <div id="app">
-            <ol>
+            <ul>
                 <!-- 番号付きのリストでcolorsの配列のカラムの数の分だけ出力される-->
-                <li v-for="color in colors">{{ color }}</li>
-            </ol>
+                <!--<li v-for="user in users">{{users}}{{ user }}</li>-->
+                <!--気をつけることは第一引数がvalueで第二引数がkeyだということ-->
+                <li v-for="(value,key) in users">
+                    {{key}}:{{value}}
+                </li>
+            </ul>
         </div>
         <script src="https://unpkg.com/vue@3.1.5"></script>
         <script src="script.js"></script>
