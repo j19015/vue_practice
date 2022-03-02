@@ -7,6 +7,15 @@
 
 const app=Vue.createApp({
     data: () =>({
-        message: 'Hello Vue.js!'
+        message: 'Hello Vue.js!',
+        count:99,
+        //構造体は{}で囲って記述
+        user:{
+            lastName:'Nakamura',
+            firstName:'Uita',
+            prefecture: 'Tokyo'
+        },
+        //配列は[]で囲う
+        colors:['Red','Green','Blue']
     })
 }).mount('#app');
