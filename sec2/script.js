@@ -6,5 +6,8 @@
 //app.mount('#app')
 
 const app=Vue.createApp({
-    options
-}).mount('#app')
+    data: () => ({
+        //初期値が入っている
+        message: "Hello Vue.js!"
+    })
+}).mount('#app');
