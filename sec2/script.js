@@ -7,10 +7,12 @@
 
 const app=Vue.createApp({
     data: () =>({
-        users:{
-            firstName:"Taro",
-            lastName:"Yamada",
-            age:"23"
+        now:'-'
+    }),
+    methods:{
+        onClick:function(){
+            this.now=new Date().toLocaleString()
+            console.log(this)
         }
-    })
+    }
 }).mount('#app');
