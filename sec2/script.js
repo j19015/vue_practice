@@ -9,4 +9,8 @@ const app=Vue.createApp({
     data: () =>({
         message:"hello vue.js!"
     })
-}).mount('#app');
+})
+app.component('hello-component',{
+    template: '<p>Hello</p>'
+})
+app.mount("#app")
