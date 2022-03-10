@@ -13,10 +13,11 @@
                 <button v-on:click="addItem">Add</button>
             </form>
             <ul>
-                <li v-for="todo in todos">
+                <li v-for="(todo,index) in todos">
                     <input type="checkbox" v-model="todo.isDone">
                     <!-- v-bind:class は todo.isDoneが真の時のみ doneというclassを反映させる-->
                     <span v-bind:class="{done: todo.isDone}">{{todo.item}}</span>
+                    <button v-on:click="deleteItem(index)">Delete</button>
                 </li>
             </ul>
             
