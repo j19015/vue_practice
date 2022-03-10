@@ -3,3 +3,11 @@
     padding:0;
     box-sizing: border-box;
 }
+
+#app ul{
+    list-style: none;
+}
+
+#app li>span.done{
+    text-decoration:line-through;
+}
