@@ -9,11 +9,8 @@
     </head>
     <body>
         <div id="app">
-            <h2>mastach</h2>
-            <p>{{message}}</p>
-
-            <h2>v-text</h2>
-            <p v-text="message"></p>
+            <a v-bind:href="url">Link1</a><br>
+            <a :href="url">Link2</a>
         </div>
         <script src="https://unpkg.com/vue@3.1.5"></script>
         <script src="js/script.js"></script>
