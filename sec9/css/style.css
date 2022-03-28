@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 
-[v-cloak]{
-    display: none;
+.large{
+    font-size:36px
 }
