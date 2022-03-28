@@ -18,12 +18,23 @@ app.mount('#app')*/
 
 const app=Vue.createApp({
     data:()=>({
-      firstName:'',
-      lastName:''
+      colors:[
+          {name: 'red'},
+          {name: 'Green'},
+          {name: 'Blue'}
+      ]
     }),
+    watch:{
+        colors:{
+            handler: function(newValue,oldValue){
+                console.log('Update!')
+            },
+            deep: true
+        }
+    },
     methods:{
-        fullName:function(){
-            return this.firstName+' '+this.lastName
+        onClick:function(event){
+            this.colors[1].name='White'
         }
     }
 
