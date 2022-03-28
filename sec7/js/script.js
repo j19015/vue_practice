@@ -1,18 +1,15 @@
 const app=Vue.createApp({
     data:()=>({
-      km:0,
-      m:0 
+      firstName:'',
+      lastName:'',
+      fullName:''
     }),
     watch:{
-        km:function(value){
-            console.log(value)
-            //this.km=value
-            this.m=value*1000
+        firstName:function(value){
+            this.fullName=value+''+this.lastName
         },
-        m:function(value){
-            console.log(value)
-            //this.m=value
-            this.km=value/1000
+        lastName:function(value){
+            this.fullName=this.firstName+' '+value
         }
     }
 
