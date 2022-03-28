@@ -1,4 +1,4 @@
-const app=Vue.createApp({
+/*const app=Vue.createApp({
     data:()=>({
       firstName:'',
       lastName:'',
@@ -10,6 +10,20 @@ const app=Vue.createApp({
         },
         lastName:function(value){
             this.fullName=this.firstName+' '+value
+        }
+    }
+
+})
+app.mount('#app')*/
+
+const app=Vue.createApp({
+    data:()=>({
+      firstName:'',
+      lastName:''
+    }),
+    computed:{
+        fullName:function(){
+            return this.firstName+' '+this.lastName
         }
     }
 
