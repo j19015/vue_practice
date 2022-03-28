@@ -3,13 +3,15 @@ const app=Vue.createApp({
         basePrice:100
     }),
     computed:{
-        taxIncludedPrice:{
-            get:function(){
-                return this.basePrice*1.1
-            },
-            set:function(value){
-                return this.basePrice=value/1.1
-            }
+        computedNumber:function(){
+            console.log("computed")
+            return Math.random()
+        }
+    },
+    methods:{
+        methodsNumber:function(){
+            console.log("methods")
+            return Math.random()
         }
     }
 })
