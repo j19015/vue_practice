@@ -21,7 +21,7 @@ const app=Vue.createApp({
       firstName:'',
       lastName:''
     }),
-    computed:{
+    methods:{
         fullName:function(){
             return this.firstName+' '+this.lastName
         }
