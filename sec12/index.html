@@ -9,11 +9,9 @@
 </head>
 <body>
   <div id="app">
-    <p>{{message}}</p>
-    <input type="text" v-model="message">
-    <pre>
-      {{ $data }}
-    </pre>
+    <!--属性は無視される　下記のvalueは何も反映されない-->
+    <input type="text" v-model="message" value="hogehoge">
+    <pre>{{$data}}</pre>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/script.js"></script>
