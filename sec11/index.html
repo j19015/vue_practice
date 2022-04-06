@@ -9,10 +9,10 @@
 </head>
 <body>
   <div id="app">
-    <p>{{counter}}</p>
-    <button v-on:click="clickHandler" id="btn">
+    <button v-on:click="clickHandler('Vue.js!')" id="btn">
       Click!
     </button>
+    <p>{{message}}</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/script.js"></script>
