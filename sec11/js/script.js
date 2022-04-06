@@ -3,9 +3,9 @@ const app = Vue.createApp({
       message:''
     }),
     methods:{
-      clickHandler:function($event,message){
-       this.message=message
-       console.log($event)
+      clickHandler:function(){
+       this.message= new Date().toLocaleTimeString()
+       console.log(this.message)
       }
     }
   })
