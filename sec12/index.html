@@ -9,10 +9,13 @@
 </head>
 <body>
   <div id="app">
-    <!--属性は無視される　下記のvalueは何も反映されない-->
-    <p>{{checked}}</p>
-    <input type="checkbox" v-model="checked">
-    <pre>{{$data}}</pre>
+    <label for="red">Red</label>
+    <input type="checkbox" id="red" value="Red" v-model="colors">
+    <label for="green">Green</label>
+    <input type="checkbox" id="green" value="Green" v-model="colors">
+    <label for="blue">Blue</label>
+    <input type="checkbox" id="blue" value="Blue" v-model="colors">
+    <p>{{colors}}</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/script.js"></script>
